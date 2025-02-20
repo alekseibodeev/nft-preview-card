@@ -84,6 +84,15 @@ ul {
   border: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .card {
   background-color: var(--clr-surface);
   width: min(100%, 21.875rem);
@@ -113,7 +122,8 @@ ul {
   opacity: 0;
   transition: opacity 100ms ease-in;
 
-  &:hover, &:focus-visible {
+  &:hover,
+  &:focus-visible {
     opacity: 1;
     outline: none;
   }
